@@ -57,3 +57,10 @@ Calculate modelability indices
 Novelty detaction
 Curation Report
 Case studies are detailed in this repository. Resulting databases will be placed here in addision to their own repositories. 
+
+
+# **A note from the authors**
+
+
+While one can strive for perfection, it's impossible to meet this standard for data curation. A accurate database is one that is contunually updated and monitored.
+Mistakes can happen at any stage of the curation process. Therefore, we ask that community members point out and make efforts to correct any errors in the databasescreated by this work, should they be found :)
