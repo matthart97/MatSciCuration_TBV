@@ -1,0 +1,12 @@
+# For later refernce, this is th order in which the properties from OCELOT appear
+
+
+The DFT and TDDFT properties available in the dataset are 
+vertical (VIE) and adiabatic (AIE) ionization energies, 
+vertical (VEA) and adiabatic (AEA) electron affinities, 
+cation (CR) and anion (AR) relaxation energies, 
+HOMO energies (HOMO), 
+LUMO energies (LUMO), 
+HOMO–LUMO energy gaps (H–L), 
+electron (ER) and hole (HR) reorganization energies, and 
+ singlet (S0S1) and triplet (S0T1) excitation energies
