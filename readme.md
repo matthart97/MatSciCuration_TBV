@@ -3,7 +3,7 @@
 "Healthy distrust makes a good basis for cooperation"-Béla Kun
 
 
-This repository shoudl act as ageneral guide to how one should go about collecting and curating data in the materials and chemical sciences.
+This repository should act as ageneral guide to how one should go about collecting and curating data in the materials and chemical sciences.
 We hope that this guide will inspire people from across the sceintific informatics disciplines to adopt a standard, reproducible pipeline for all of thier studies. Furthermore, we hope that this repository should encourage people to upload their data curation pipline to a github repository when a sceintific manuscript is submitted to a major journal.
 
 We use the case studies of dyes and polymers as an example of our datacuration pipline
