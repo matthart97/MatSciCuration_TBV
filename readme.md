@@ -8,7 +8,7 @@ We hope that this guide will inspire people from across the sceintific informati
 
 We use the case studies of dyes and polymers as an example of our datacuration pipline
 
-#Overall Pipeline
+# Overall Pipeline
 
 The Process begins with designing and formally defining your data curation process to ensure reproducibility.
 
