@@ -9,28 +9,38 @@ from psmiles import PolymerSmiles as PS
 
 
 class GenericNormalizer:
+ 
+
 
 
     def NormalizeSmiles(self, smiles):
-        mol = Chem.MolFromSmiles(smiles)
+        try:
+            mol = Chem.MolFromSmiles(smiles)
+        except:
+            return None
         if mol is not None:
-            return Chem.MolToSmiles(mol)
+            try:
+                return Chem.MolToSmiles(mol)
+            except:
+                return None
         else:
             return None
         
 
     def NormalizeSmilesinDataframe(self,df):
         PossibleSMI= ['SMILES','Smiles','smiles']
-        columns = df.columns()
+        columns = df.columns
 
         if set(PossibleSMI).intersection(columns):
-            smicol = set(PossibleSMI).intersection(columns)
+            smicol= next((col for col in PossibleSMI if col in columns), None)
         else:
             raise Exception("The SMILES column should be clearly labaled in the dataframe")
         
         df['NormalizedSmiles'] = df[smicol].apply(self.NormalizeSmiles)
         # Remove rows where SMILES strings couldn't be normalized
         df = df.dropna(subset=['NormalizedSmiles'])
+        # eliminate those with unsepcified elements
+        df = df[~df[smicol].str.contains(r'\*', na=False)]
 
         return df
 
@@ -42,9 +52,9 @@ class GenericNormalizer:
         return PS(psmiles).canonicalize 
 
 
-    def NormalizeSmilesinDataframe(self,df):
+    def NormalizePSmilesinDataframe(self,df):
         PossibleSMI= ['PSMILES','PSmiles','Psmiles','psmiles','pSMILES','pSmiles']
-        columns = df.columns()
+        columns = df.columns
 
         if set(PossibleSMI).intersection(columns):
             smicol = set(PossibleSMI).intersection(columns)

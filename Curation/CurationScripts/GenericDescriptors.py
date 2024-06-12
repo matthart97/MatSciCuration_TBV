@@ -15,7 +15,7 @@ from typing import List
 class GenericFeaturization():
 
 
-#TODO add 
+#TODO add functons for rdkit descriptors as well 
 
 
     def MorganFingerprintsFromSmiles(self, df: pd.DataFrame, radius: int = 2, n_bits: int = 1024) -> pd.DataFrame:
