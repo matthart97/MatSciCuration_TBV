@@ -1,6 +1,6 @@
 # Trust, but Verify.
 
-"Healthy distrust makes a good basis for cooperation"-Béla Kun
+"Healthy distrust makes a good basis for cooperation"- Joseph Stalin
 
 
 This repository should act as ageneral guide to how one should go about collecting and curating data in the materials and chemical sciences.
