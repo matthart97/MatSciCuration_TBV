@@ -5,22 +5,22 @@ import os
 
 
 PATH = os.getcwd()
-data_path = PATH +"Dye_lake/"
+data_path = PATH +"/Dye_lake/"
 
-df1 = pd.read_csv(PATH+"deep4chem.csv") #changed chromophre to SMILES
-df2 = pd.read_csv(PATH+"ocelot_data.csv")
-df3 = pd.read_csv(PATH+"WDVDataComplete_uncurated.csv")
+df1 = pd.read_csv(data_path+"deep4chem.csv") #changed chromophre to SMILES
+df2 = pd.read_csv(data_path+"ocelot_data.csv")
+df3 = pd.read_csv(data_path+"WDVDataComplete_uncurated.csv")
 
 df1['source'] = 'D4C' #deep4chem
 df2['source'] = 'OCT'
 df3['source'] = 'WDV' 
  
+
+print(df2.columns)
 # Add column names for the second dataset
 df2.columns = [
-    'identifier', 'VerticalIonizationE', 'AdiabaticIonizationE', 'VerticalElectronAffinity', 'AdiabaticElectronAffinity', 'HLGap', 'lowest-lyingSinglet', 'lowest-lyingTriplet', 'HoleReorganizationE', 'CatIonRelax2', 'CationRelax1', 'ElectronReorganizationE', 'AnIonRelax1', 'AnionRelax2', 'lumo', 'homo', 'SMILES'
+    'identifier', 'VerticalIonizationE', 'AdiabaticIonizationE', 'VerticalElectronAffinity', 'AdiabaticElectronAffinity', 'HLGap', 'lowest-lyingSinglet', 'lowest-lyingTriplet', 'HoleReorganizationE', 'CatIonRelax2', 'CationRelax1', 'ElectronReorganizationE', 'AnIonRelax1', 'AnionRelax2', 'lumo', 'homo', 'SMILES', 'source'
 ]
-
-
 
 
 # Merge the two datasets on the 'SMILES' column
