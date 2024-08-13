@@ -121,7 +121,7 @@ distance_matrix = calculate_sqaure_distance_matrix(Descriptors)
 try:
   test = rmodi_index(distance_matrix,df[props[0]])
 except: 
-  print("what the FUCK")
+  print("not working")
 
 with open("output.txt") as f:
     f.write(test)
