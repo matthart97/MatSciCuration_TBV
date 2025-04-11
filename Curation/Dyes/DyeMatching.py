@@ -3,7 +3,7 @@ import numpy as np
 
 
 
-df = pd.read_csv('/home/matt/Proj/MatSciCuration_TBV/Data/Dyes/Dyes_Normallized.csv')
+df = pd.read_csv('../../Data/Dyes/Dyes_Normallized.csv')
 
 
 # Group by the 'PSMILES' column and combine the rows using the 'first' function to fill NaNs with available values
@@ -23,4 +23,4 @@ sorted_df = combined_df.sort_values(by='non_nan_count', ascending=False)
 sorted_df = sorted_df.reset_index(drop=True).drop(columns=['non_nan_count'])
 
 
-sorted_df.to_csv('/home/matt/Proj/MatSciCuration_TBV/Data/Dyes/Dyes_Matched.csv',index=False)
+sorted_df.to_csv('../../Data/Dyes/Dyes_Matched.csv',index=False)

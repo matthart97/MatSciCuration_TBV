@@ -34,4 +34,4 @@ df['SMILES'] = df['SMILES'].apply(normalize_smiles)
 # Remove rows where SMILES strings couldn't be normalized
 df = df.dropna(subset=['SMILES'])
 
-df.to_csv('/home/matt/Proj/MatSciCuration_TBV/Data/Dyes/Dyes_Normallized.csv',index=False)
+df.to_csv('../../Data/Dyes/Dyes_Normallized.csv',index=False)

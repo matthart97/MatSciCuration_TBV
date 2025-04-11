@@ -9,17 +9,12 @@ import os
 PATH = os.getcwd() 
 
 
-df =pd.read_csv('/home/matt/Proj/MatSciCuration_TBV/Data/Dyes/Dyes_Matched.csv')
-
-
-
-
-
+df =pd.read_csv('../../Data/Dyes/Dyes_Matched.csv')
 
 
 def smiles_to_morgan_fingerprints_properties(df: pd.DataFrame, radius: int = 2, n_bits: int = 1024) -> pd.DataFrame:
     # Extract SMILES strings and convert to RDKit molecule objects
-    smiles_list = df['SMILES'].tolist()
+    smiles_list = df['NormalizedSMILES'].tolist()
     mol_list = [Chem.MolFromSmiles(smiles) for smiles in smiles_list]
 
     # Remove None values (invalid SMILES)
@@ -47,4 +42,4 @@ def smiles_to_morgan_fingerprints_properties(df: pd.DataFrame, radius: int = 2, 
 df = pd.DataFrame(df)
 result_df = smiles_to_morgan_fingerprints_properties(df)
 
-result_df.to_csv('/home/matt/Proj/MatSciCuration_TBV/Data/Dyes/DyeDescriptors.csv',index=False)
+result_df.to_csv('../../Data/Dyes/Dyes_Matched_Desc.csv',index=False)
