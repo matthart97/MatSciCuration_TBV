@@ -1,3 +1,9 @@
+# 🚧This Repository is Undergoing Maintainence Between Friday, April 11th and Monday, April 14th 2025 🚧
+
+If you are hoping to use the data associated with the publication: "Trust Not Verify? The Critical Need for Data Curation Standards in Materials Informatics," then please check back after April 14th.
+
+
+
 # Trust, but Verify.
 
 "Healthy distrust makes a good basis for cooperation"-Joseph Stalin
