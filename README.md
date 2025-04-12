@@ -8,14 +8,14 @@ If you are hoping to use the data associated with the publication: "Trust Not Ve
 "Healthy distrust makes a good basis for cooperation"-Joseph Stalin
 
 
-This repository should act as ageneral guide to how one should go about collecting and curating data in the materials and chemical sciences.
-We hope that this guide will inspire people from across the sceintific informatics disciplines to adopt a standard, reproducible pipeline for all of thier studies. Furthermore, we hope that this repository should encourage people to upload their data curation pipline to a github repository when a sceintific manuscript is submitted to a major journal.
+This repository should act as a general guide to how one should go about collecting and curating data in the materials and chemical sciences.
+We hope that this guide will inspire people from across the scientific informatics disciplines to adopt a standard, reproducible pipeline for all of thier studies. Furthermore, we hope that this repository will encourage people to upload their data curation pipline to a github repository when a scientific manuscript is submitted to a major journal.
 
-We use the case studies of dyes and polymers as an example of our datacuration pipline
+We use the case studies of dyes and polymers as examples for our datacuration pipline.
 
 # Overall Pipeline
 
-The Process begins with designing and formally defining your data curation process to ensure reproducibility.
+The process begins with designing and formally defining your data curation process to ensure reproducibility.
 
 Data Collection
 Clearly define the research problem
