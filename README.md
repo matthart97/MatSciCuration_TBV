@@ -71,4 +71,16 @@ While one can strive for perfection, it's impossible to meet this standard for d
 Mistakes can happen at any stage of the curation process. Therefore, we ask that community members point out and make efforts to correct any errors in the databases created in this work, should they be found :)
 
 
+# Citation
 
+@article{doi:10.1021/acs.chemmater.4c00981,
+author = {Hart, Matthew and Idanwekhai, Kelvin and Alves, Vinicius M. and Miller, Alexander J. M. and Dempsey, Jillian L. and Cahoon, James F. and Chen, Chun-Hsing and Winkler, David A. and Muratov, Eugene N. and Tropsha, Alexander},
+title = {Trust Not Verify? The Critical Need for Data Curation Standards in Materials Informatics},
+journal = {Chemistry of Materials},
+volume = {36},
+number = {19},
+pages = {9046-9055},
+year = {2024},
+doi = {10.1021/acs.chemmater.4c00981},
+URL = {https://doi.org/10.1021/acs.chemmater.4c00981},
+eprint = {https://doi.org/10.1021/acs.chemmater.4c00981}}
